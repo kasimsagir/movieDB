@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PopularTVShowCell" reuseIdentifier="PopularTVShowCell" id="keB-7c-JSP" customClass="PopularTVShowCell" customModule="movieDB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="451" height="284"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="451" height="284"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CFa-4Q-5nL" customClass="MovieImageView" customModule="movieDB" customModuleProvider="target">
+                        <rect key="frame" x="16" y="44" width="419" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="CFa-4Q-5nL" secondAttribute="height" multiplier="335:160" id="yR6-f2-s65"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icOval" translatesAutoresizingMaskIntoConstraints="NO" id="oBF-16-KhQ">
+                        <rect key="frame" x="384" y="60" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="Zq2-DG-e5A"/>
+                            <constraint firstAttribute="width" secondItem="oBF-16-KhQ" secondAttribute="height" multiplier="1:1" id="gWo-ge-Xot"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9.2" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7D-SQ-grJ">
+                        <rect key="frame" x="388" y="69" width="27" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="npp-iq-IO3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JUSTICE LEAGUE" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5a-HK-eQK">
+                        <rect key="frame" x="24" y="254" width="403" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="YiR-5f-hls" firstAttribute="trailing" secondItem="CFa-4Q-5nL" secondAttribute="trailing" constant="16" id="211-TM-HlX"/>
+                <constraint firstItem="g5a-HK-eQK" firstAttribute="top" secondItem="CFa-4Q-5nL" secondAttribute="bottom" constant="10" id="7Kb-1Y-PO0"/>
+                <constraint firstItem="g5a-HK-eQK" firstAttribute="trailing" secondItem="CFa-4Q-5nL" secondAttribute="trailing" constant="-8" id="98o-bK-cBg"/>
+                <constraint firstItem="g5a-HK-eQK" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="YiR-5f-hls" secondAttribute="bottom" id="BxU-1O-ci8"/>
+                <constraint firstItem="oBF-16-KhQ" firstAttribute="trailing" secondItem="CFa-4Q-5nL" secondAttribute="trailing" constant="-16" id="Drz-ye-ylW"/>
+                <constraint firstItem="CFa-4Q-5nL" firstAttribute="leading" secondItem="YiR-5f-hls" secondAttribute="leading" constant="16" id="Ehy-e1-PzI"/>
+                <constraint firstItem="oBF-16-KhQ" firstAttribute="top" secondItem="CFa-4Q-5nL" secondAttribute="top" constant="16" id="R4c-Ru-me1"/>
+                <constraint firstItem="YiR-5f-hls" firstAttribute="top" secondItem="CFa-4Q-5nL" secondAttribute="top" id="YMV-13-9Id"/>
+                <constraint firstItem="N7D-SQ-grJ" firstAttribute="centerX" secondItem="oBF-16-KhQ" secondAttribute="centerX" id="aWd-dz-ICL"/>
+                <constraint firstItem="N7D-SQ-grJ" firstAttribute="centerY" secondItem="oBF-16-KhQ" secondAttribute="centerY" id="c2V-Mp-W4S"/>
+                <constraint firstItem="g5a-HK-eQK" firstAttribute="leading" secondItem="CFa-4Q-5nL" secondAttribute="leading" constant="8" id="kPl-O6-rNF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="YiR-5f-hls"/>
+            <size key="customSize" width="481" height="283"/>
+            <connections>
+                <outlet property="movieImageView" destination="CFa-4Q-5nL" id="66u-Ec-R2i"/>
+                <outlet property="movieLabel" destination="g5a-HK-eQK" id="ITn-Nl-CdE"/>
+                <outlet property="movieRateLabel" destination="N7D-SQ-grJ" id="Hih-Oa-hYg"/>
+            </connections>
+            <point key="canvasLocation" x="228.2608695652174" y="83.705357142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icOval" width="30" height="30"/>
+    </resources>
+</document>
